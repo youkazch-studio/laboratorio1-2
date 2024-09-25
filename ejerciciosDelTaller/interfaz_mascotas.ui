@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaMascotas</class>
+ <widget class="QWidget" name="VentanaMascotas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Datos de las Mascotas</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_instrucciones">
+     <property name="text">
+      <string>Introduce los datos de las 3 mascotas:</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Datos Mascota 1 -->
+   <item>
+    <widget class="QLabel" name="label_mascota1">
+     <property name="text">
+      <string>Mascota 1:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_nombre1">
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_edad1">
+     <property name="placeholderText">
+      <string>Edad</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_tipo1">
+     <property name="placeholderText">
+      <string>Tipo (e.g., Perro, Gato)</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Datos Mascota 2 -->
+   <item>
+    <widget class="QLabel" name="label_mascota2">
+     <property name="text">
+      <string>Mascota 2:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_nombre2">
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_edad2">
+     <property name="placeholderText">
+      <string>Edad</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_tipo2">
+     <property name="placeholderText">
+      <string>Tipo (e.g., Perro, Gato)</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Datos Mascota 3 -->
+   <item>
+    <widget class="QLabel" name="label_mascota3">
+     <property name="text">
+      <string>Mascota 3:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_nombre3">
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_edad3">
+     <property name="placeholderText">
+      <string>Edad</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_tipo3">
+     <property name="placeholderText">
+      <string>Tipo (e.g., Perro, Gato)</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Botón Enviar -->
+   <item>
+    <widget class="QPushButton" name="boton_enviar">
+     <property name="text">
+      <string>Enviar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

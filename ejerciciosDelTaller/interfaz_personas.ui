@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaPersona</class>
+ <widget class="QWidget" name="VentanaPersona">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Datos de la Persona</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Etiqueta de Instrucciones -->
+   <item>
+    <widget class="QLabel" name="label_instrucciones">
+     <property name="text">
+      <string>Introduce 10 datos característicos de una persona:</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Campos de entrada para los datos -->
+   <item>
+    <widget class="QLineEdit" name="lineEdit_nombre">
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_edad">
+     <property name="placeholderText">
+      <string>Edad</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_genero">
+     <property name="placeholderText">
+      <string>Género</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_ocupacion">
+     <property name="placeholderText">
+      <string>Ocupación</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_direccion">
+     <property name="placeholderText">
+      <string>Dirección</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_telefono">
+     <property name="placeholderText">
+      <string>Teléfono</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_email">
+     <property name="placeholderText">
+      <string>Email</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_nacionalidad">
+     <property name="placeholderText">
+      <string>Nacionalidad</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_estado_civil">
+     <property name="placeholderText">
+      <string>Estado Civil</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_hobbies">
+     <property name="placeholderText">
+      <string>Hobbies</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Botón Enviar -->
+   <item>
+    <widget class="QPushButton" name="boton_enviar">
+     <property name="text">
+      <string>Enviar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

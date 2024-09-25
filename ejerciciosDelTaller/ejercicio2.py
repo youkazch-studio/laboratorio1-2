@@ -1,32 +1,41 @@
 
 """Construir un programa que muestre una ventana y que lea una clave secreta sin mostrar los caracteres que la componen."""
 
-#En este caso se utilizara la biblioteca tkinter para poder contruir las interfaces graficas de los programas.
 
 #importacion de modulos
-import tkinter as tk
 
-def mostrar_clave():
-    clave = entry_clave.get()
-    # Muestra un mensaje con la clave (solo para demostración)
-    print(f"Clave ingresada: {clave}")
+from PyQt5 import QtWidgets, uic
+import sys
 
-# Crear la ventana principal
-root = tk.Tk()
-root.title("Entrada de Clave Secreta")
-root.geometry("300x150")
+class VentanaClave(QtWidgets.QWidget):
+    def __init__(self):
+        super(VentanaClave, self).__init__()
+        uic.loadUi("clave_secreta.ui", self)  # Cargar el archivo .ui
 
-# Etiqueta para la clave
-label_clave = tk.Label(root, text="Ingrese su clave:")
-label_clave.pack(pady=10)
+        # Conectar el botón "Enviar" a la función de envío
+        self.boton_enviar.clicked.connect(self.mostrar_clave)
 
-# Campo de entrada para la clave secreta (sin mostrar los caracteres)
-entry_clave = tk.Entry(root, show="*", width=30)
-entry_clave.pack(pady=5)
+    def mostrar_clave(self):
+        # Obtener la clave introducida
+        clave = self.lineEdit_clave.text()
+        
+        # Aquí puedes hacer lo que quieras con la clave
+        # Por seguridad, evitamos mostrarla en consola.
+        print("Clave ingresada correctamente.")
 
-# Botón para mostrar la clave por consola(solo para fines de demostración)
-boton_mostrar = tk.Button(root, text="Mostrar clave", command=mostrar_clave)
-boton_mostrar.pack(pady=10)
+        # Limpiar el campo de texto
+        self.lineEdit_clave.clear()
 
-# Ejecutar el bucle principal
-root.mainloop()
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    ventana = VentanaClave()
+    ventana.show()
+    sys.exit(app.exec_())
+
+    app = QtWidgets.QApplication(sys.argv)
+    ventana = VentanaClave
+
+    app = QtWidgets.QApplication(sys.argv)
+   
+
+    app = QtWidgets.QAppl
